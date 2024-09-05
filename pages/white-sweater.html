@@ -12,8 +12,8 @@
         <div class="container">
             <img src="/imgs/logo.png" alt="logo">
             <nav class="header-nav">
-                <a href="#">Главная</a>
-                <a href="#">Каталог</a>
+                <a href="/">Главная</a>
+                <a href="/pages/catalog.html">Каталог</a>
                 <a href="#">Акции</a>
                 <a href="#">Контакты</a>
             </nav>
@@ -31,24 +31,49 @@
         </div>
     </header>
     <main>
-        <div class="container">
-            <div>
-                <p>Главная</p>
+        <div class="container" style="flex-direction: column; align-items: flex-start;">
+            <div class="navigate">
+                <a href="/">Главная</a>
                 <img src="/imgs/arrow.png" alt="arrow-right">
-                <p>Каталог</p>
+                <a href="catalog.html">Каталог</a>
                 <img src="/imgs/arrow.png" alt="arrow-right">
                 <p>Свитера</p>
             </div>
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+            <div class="product">
+                <div class="product-imgs">
+                    <img src="/imgs/Img.png" alt="white-sweater1">
+                    <img src="/imgs/Img.png" alt="white-sweater2">
+                    <img src="/imgs/Img.png" alt="white-sweater3">
                 </div>
-                <div>
-                    <img src="/imgs/Img.png" alt="white-sweater">
-                </div>
-                <article></article>
+                <img src="/imgs/Img.png" alt="white-sweater" width="380px" height="516px">
+                <article>
+                    <h1>Вязанный свитер</h1>
+                    <h2>5400.00 ₽</h2>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </h3>
+                    <div class="color" style="border-top: 1px rgba(0, 0, 0, 0.1) solid;">
+                        <p>Цвет</p>
+                        <div style="gap: 16px;">
+                            <button style="background-color: #EBEBEB;">
+                                <img src="/imgs/Check.svg" alt="Check">
+                            </button>
+                            <button style="background-color: #9F7D5E;"></button>
+                            <button style="background-color: #646464;"></button>
+                        </div>
+                    </div>
+                    <div class="size">
+                        <p>Размер</p>
+                        <div style="gap: 12px;">
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button id="favorite">В избранное</button>
+                        <button id="card">В корзину</button>
+                    </div>
+                </article>
             </div>
         </div>
     </main>
@@ -61,9 +86,9 @@
             <div class="menu">
                 <h1 >МЕНЮ</h1>
                 <nav style="margin-top: 20px">
-                    <a href="#">Главная</a>
+                    <a href="/">Главная</a>
                     <a href="#">Акции</a>
-                    <a href="#">Каталог</a>
+                    <a href="./pages/catalog.html">Каталог</a>
                     <a href="#">Контакты</a>
                 </nav>
             </div>

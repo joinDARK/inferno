@@ -14,6 +14,10 @@ svg {
     cursor: pointer;
 }
 
+button {
+    cursor: pointer;
+}
+
 header {
     width: 100%;
     padding-top: 20px;
@@ -173,6 +177,7 @@ header {
     font-family: "Jost";
     font-weight: 400;
     font-size: 0.875rem;
+    text-decoration: none;
     color: white;
 
     border: none;
@@ -220,4 +225,140 @@ footer > .container > article > p, .contacts h3 {
 
 .contacts {
     width: 300px;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+.navigate {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 57px;
+    margin-top: 114px;
+}
+
+.navigate a, .navigate p {
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+.navigate img {
+    margin-right: 12px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 213px;
+}
+
+.product-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 516px;
+
+    margin-right: 82px;
+}
+
+.product-imgs img{
+    width: 120px;
+    height: 162.92px;
+}
+
+.product-imgs img:hover {
+    border: 5px #A4A4A4 solid;
+}
+
+.product > article {
+    margin-left: 226px;
+}
+
+.product > article h1 {
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.product > article h2 {
+    font-family: "Jost";
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #8C907E;
+    padding: 20px 0;
+}
+
+.product > article h3 {
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 0.815rem;
+    width: 360px;
+    margin-bottom: 20px;
+}
+
+.color, .size {
+    padding: 20px 0;
+    border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+}
+
+.color p, .size p {
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+.color div, .size div {
+    display: flex;
+    align-items: center;
+}
+
+.color button {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    border: none;
+}
+
+.size button {
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+
+    padding: 12px 20.5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.btns {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.btns button {
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+#favorite {
+    color: black;
+    padding: 16px 34.5px;
+    background-color: #F0F0F0;
+}
+
+#card {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 16px 160px;
 }
