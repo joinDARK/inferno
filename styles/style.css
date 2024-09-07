@@ -365,6 +365,11 @@ footer > .container > article > p, .contacts h3 {
 
 /*------------------------------------------------------------------------------------------------*/
 
+.catalog {
+    display: flex;
+    justify-content: space-between;
+}
+
 aside {
     margin-left: 100px;
     width: 295px;
@@ -395,4 +400,90 @@ aside {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.price {
+    padding: 24px 0;
+    border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+}
+
+.price-title, .sizes-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-title p, .sizes-title p {
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: black;
+}
+
+.sizes-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 24px;
+}
+
+.sizes-group button {
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.filter > button {
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+
+    border: none;
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 655px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-content_title {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 235px;
+    margin-bottom: 86px;
+
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.products_lists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 70px;
+    row-gap: 157px;
+    width: 1160px;
+
+    margin-right: 264px;
+}
+
+.products-nav {
+
+}
+
+#btn-left, #btn-rignt {
+    padding: 8px 14px;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+    border-radius: 2px;
+    background-color: white;
 }
