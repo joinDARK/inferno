@@ -44,7 +44,7 @@ header {
     gap: 50px;
 }
 
-.header-nav a, .menu > nav a {
+.header-nav a, .menu>nav a {
     font-family: "Jost";
     font-weight: 400;
     font-size: 0.875rem;
@@ -53,7 +53,7 @@ header {
     text-decoration: none;
 }
 
-.header-nav a:hover, .menu > nav a:hover {
+.header-nav a:hover, .menu>nav a:hover {
     text-decoration: underline;
 }
 
@@ -189,16 +189,18 @@ header {
 footer {
     padding-top: 73px;
     padding-bottom: 74px;
+    display: flex;
+    justify-content: center;
 
     background-color: #E3E3E3;
 }
 
-footer > .container > article {
+footer>.container>article {
     width: 339px;
     height: 132px;
 }
 
-footer > .container > article > p, .contacts h3 {
+footer>.container>article>p, .contacts h3 {
     font-family: "Jost";
     font-weight: 300;
 
@@ -217,7 +219,7 @@ footer > .container > article > p, .contacts h3 {
     color: #111111;
 }
 
-.menu > nav {
+.menu>nav {
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -225,6 +227,17 @@ footer > .container > article > p, .contacts h3 {
 
 .contacts {
     width: 300px;
+}
+
+.w339 {
+    width: 339px;
+}
+
+.container-2 {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 /*-------------------------------------------------------------------------------*/
@@ -265,7 +278,7 @@ footer > .container > article > p, .contacts h3 {
     margin-right: 82px;
 }
 
-.product-imgs img{
+.product-imgs img {
     width: 120px;
     height: 162.92px;
 }
@@ -274,17 +287,17 @@ footer > .container > article > p, .contacts h3 {
     border: 5px #A4A4A4 solid;
 }
 
-.product > article {
+.product>article {
     margin-left: 226px;
 }
 
-.product > article h1 {
+.product>article h1 {
     font-family: "Marcellus", system-ui;
     font-weight: 400;
     font-size: 2.5rem;
 }
 
-.product > article h2 {
+.product>article h2 {
     font-family: "Jost";
     font-weight: 400;
     font-size: 1.5rem;
@@ -292,7 +305,7 @@ footer > .container > article > p, .contacts h3 {
     padding: 20px 0;
 }
 
-.product > article h3 {
+.product>article h3 {
     font-family: "Marcellus", system-ui;
     font-weight: 400;
     font-size: 0.815rem;
@@ -440,7 +453,7 @@ aside {
 }
 
 
-.filter > button {
+.filter>button {
     font-family: "Marcellus", system-ui;
     font-weight: 400;
     font-size: 1rem;
@@ -478,7 +491,32 @@ aside {
 }
 
 .products-nav {
+    width: 1160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
 
+    margin-top: 79px;
+    margin-bottom: 122px;
+}
+
+.products-nav>div button:first-child {
+    background-color: rgba(0, 0, 0, 0.06);
+    color: black;
+}
+
+.products-nav>div button {
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 #btn-left, #btn-rignt {
@@ -486,4 +524,108 @@ aside {
     border: 1px rgba(0, 0, 0, 0.1) solid;
     border-radius: 2px;
     background-color: white;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+.sum-order {
+    padding: 20px 24px 88.21px 24px;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+    border-radius: 6px;
+}
+
+.sum-order > p {
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 24px;
+}
+
+.sum-order_text, .sum-order_text-last {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 457px;
+    
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.sum-order_text-last {
+    color: black;
+    margin-top: 20px;
+}
+
+.sum-order_text:nth-child(3) {
+    border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.sum-order_text p:nth-child(odd) {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.sum-order_text p:nth-child(even) {
+    color: black;
+}
+
+.promocode {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 24px 0;
+}
+
+.promocode>div {
+    background-color: #F0F0F0;
+    border-radius: 12px;
+    display: flex;
+    gap: 12px;
+    padding: 16px 12px;
+    width: 326px;
+}
+
+.promocode>div input {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.promocode>button {
+    width: 119px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+}
+
+.sum-order>button {
+    width: 457px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
 }
