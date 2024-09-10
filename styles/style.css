@@ -22,7 +22,6 @@ header {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-
     background-color: #F1F1F0;
 }
 
@@ -30,7 +29,6 @@ header {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-
     display: flex;
     align-items: center;
 }
@@ -38,7 +36,6 @@ header {
 .header-nav {
     margin-left: 474px;
     margin-right: 297px;
-
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -61,7 +58,6 @@ header {
     position: relative;
     z-index: 1;
     width: 100%;
-
     padding-top: 283px;
     padding-bottom: 568px;
 }
@@ -528,6 +524,70 @@ aside {
 
 /*------------------------------------------------------------------------------------------------*/
 
+.card {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.card > h1 {
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 32px;
+}
+
+.card > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 71px;
+}
+
+.item {
+    padding: 20px 24px 9px;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+    border-radius: 6px;
+}
+
+.item > p {
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #646464;
+    text-decoration: underline;
+    text-align: right;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info img {
+    width: 100px;
+    margin-right: 24px;
+}
+
+.info-text p {
+    font-family: "Marcellus", system-ui;
+    font-weight: 400;
+}
+
+.info-text p:first-child {
+    font-size: 1.25rem;
+    margin-bottom: 9px;
+}
+
+.info-text > p > span {
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.info-text p:last-child {
+    font-size: 1.5rem;
+    color: #646464;
+    margin-top: 10px;
+}
+
 .sum-order {
     padding: 20px 24px 88.21px 24px;
     border: 1px rgba(0, 0, 0, 0.1) solid;
@@ -539,6 +599,7 @@ aside {
     font-weight: 400;
     font-size: 1.5rem;
     color: black;
+
     margin-bottom: 24px;
 }
 
